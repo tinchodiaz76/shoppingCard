@@ -1,7 +1,7 @@
 import {shoppingReducers,initialStateShopping} from "../../reducers/shoppingReducers";
 import {useReducer } from "react";
 import ProductItem from "../ProductItem/ProductItem";
-import ListProducts from "../ListProducts/ListPorducts";
+import ListProducts from "../ListProducts/ListProducts";
 import ImporteTotalProducts from "../ImporteTotalProducts/ImporteTotalProducts";
 import {ADD_TO_CART, REMOVE_ONE_FROM_CART} from "../../actions/shoppingActions"
 
@@ -38,7 +38,6 @@ const ShoppingCart = () => {
         <>
             <h1>Shopping Cart</h1>
             <ProductItem products={state.products} addToCart={addToCart} delFromCart={delFromCart}/>
-            <h3>Productos</h3>
             <ListProducts selectproducts={state.cart}/>
             <ImporteTotalProducts products={state.cart}/>
         </>
