@@ -2,7 +2,7 @@ import {shoppingReducers,initialStateShopping} from "../../reducers/shoppingRedu
 import {useReducer } from "react";
 import ProductItem from "../ProductItem/ProductItem";
 import ListProducts from "../ListProducts/ListPorducts";
-import ImporteTotalProducts from "../ImporteTotalProduscts/ImporteTotalProducts";
+import ImporteTotalProducts from "../ImporteTotalProducts/ImporteTotalProducts";
 import {ADD_TO_CART, REMOVE_ONE_FROM_CART} from "../../actions/shoppingActions"
 
 const ShoppingCart = () => {
